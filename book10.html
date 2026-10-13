@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Prince – Antoine de Saint-Exupéry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="info-page">
+
+  <article class="book" style="--accent: #3a86ff;">
+    <div class="book__cover">
+      <img src="https://covers.openlibrary.org/b/isbn/9780156012195-L.jpg" alt="Cover of The Little Prince">
+      <span class="sticker" aria-hidden="true">🌹</span>
+    </div>
+
+    <div class="book__body">
+      <p class="pill">Fable</p>
+      <h1 class="book__title">The Little Prince</h1>
+      <p class="book__author">by Antoine de Saint-Exupéry</p>
+
+      <dl class="meta">
+        <div><dt>Published</dt><dd>1943</dd></div>
+        <div><dt>Country</dt><dd>France</dd></div>
+        <div><dt>Language</dt><dd>French</dd></div>
+      </dl>
+
+      <h2>About the book</h2>
+      <p class="book__summary">
+        A pilot stranded in the Sahara meets a small prince who has travelled from a tiny asteroid. Through the prince&#x27;s stories of the planets he visited, the book gently reminds us what truly matters in life.
+      </p>
+
+      <h2>Key themes</h2>
+      <ul class="tags">
+        <li>Love</li>
+        <li>Friendship</li>
+        <li>Seeing with the heart</li>
+        <li>Childhood wonder</li>
+      </ul>
+
+      <nav class="pager">
+        <a href="book9.html">&larr; Previous</a>
+        <span>10 / 20</span>
+        <a href="book11.html">Next &rarr;</a>
+      </nav>
+    </div>
+  </article>
+
+  <script>
+    // Keep the left frame's highlight in sync (works when served over http)
+    try { parent.frames["list"].highlight("book10.html"); } catch (err) {}
+  </script>
+
+</body>
+</html>

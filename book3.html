@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Alchemist – Paulo Coelho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="info-page">
+
+  <article class="book" style="--accent: #e09f3e;">
+    <div class="book__cover">
+      <img src="https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg" alt="Cover of The Alchemist">
+      <span class="sticker" aria-hidden="true">🏜️</span>
+    </div>
+
+    <div class="book__body">
+      <p class="pill">Philosophical Fiction</p>
+      <h1 class="book__title">The Alchemist</h1>
+      <p class="book__author">by Paulo Coelho</p>
+
+      <dl class="meta">
+        <div><dt>Published</dt><dd>1988</dd></div>
+        <div><dt>Country</dt><dd>Brazil</dd></div>
+        <div><dt>Language</dt><dd>Portuguese</dd></div>
+      </dl>
+
+      <h2>About the book</h2>
+      <p class="book__summary">
+        Santiago, a young shepherd from Spain, dreams of a treasure hidden near the Egyptian pyramids. His journey across the desert brings him mentors, love and loss, and teaches him to listen to his heart and follow his &quot;Personal Legend&quot;.
+      </p>
+
+      <h2>Key themes</h2>
+      <ul class="tags">
+        <li>Following dreams</li>
+        <li>Destiny</li>
+        <li>Self-discovery</li>
+        <li>The journey</li>
+      </ul>
+
+      <nav class="pager">
+        <a href="book2.html">&larr; Previous</a>
+        <span>03 / 20</span>
+        <a href="book4.html">Next &rarr;</a>
+      </nav>
+    </div>
+  </article>
+
+  <script>
+    // Keep the left frame's highlight in sync (works when served over http)
+    try { parent.frames["list"].highlight("book3.html"); } catch (err) {}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="list-page">
+
+  <header class="brand">
+    <span class="brand__logo" aria-hidden="true">📖</span>
+    <div>
+      <p class="brand__name">Book Shelf</p>
+      <p class="brand__tag">20 reads worth your time</p>
+    </div>
+  </header>
+
+  <input type="search" id="search" class="search" placeholder="Search books or authors…" oninput="filterBooks()">
+
+  <nav>
+    <a href="welcome.html" target="info" class="nav-home active">
+      <span class="nav-home__icon">🏠</span> Home
+    </a>
+
+    <p class="section-label">All books <span id="count">20</span></p>
+    <ul class="books" id="books">
+      <li style="--c: #e63946;">
+        <a href="book1.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg" alt="">
+          <span><strong>1984</strong><small>George Orwell</small></span>
+        </a>
+      </li>
+      <li style="--c: #f77f00;">
+        <a href="book2.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg" alt="">
+          <span><strong>To Kill a Mockingbird</strong><small>Harper Lee</small></span>
+        </a>
+      </li>
+      <li style="--c: #e09f3e;">
+        <a href="book3.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780062315007-M.jpg" alt="">
+          <span><strong>The Alchemist</strong><small>Paulo Coelho</small></span>
+        </a>
+      </li>
+      <li style="--c: #7209b7;">
+        <a href="book4.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780747532699-M.jpg" alt="">
+          <span><strong>Harry Potter and the Philosopher&#x27;s Stone</strong><small>J.K. Rowling</small></span>
+        </a>
+      </li>
+      <li style="--c: #fb5607;">
+        <a href="book5.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9788173711466-M.jpg" alt="">
+          <span><strong>Wings of Fire</strong><small>A.P.J. Abdul Kalam</small></span>
+        </a>
+      </li>
+      <li style="--c: #2a9d8f;">
+        <a href="book6.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg" alt="">
+          <span><strong>The Great Gatsby</strong><small>F. Scott Fitzgerald</small></span>
+        </a>
+      </li>
+      <li style="--c: #ef476f;">
+        <a href="book7.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg" alt="">
+          <span><strong>Pride and Prejudice</strong><small>Jane Austen</small></span>
+        </a>
+      </li>
+      <li style="--c: #588157;">
+        <a href="book8.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg" alt="">
+          <span><strong>The Hobbit</strong><small>J.R.R. Tolkien</small></span>
+        </a>
+      </li>
+      <li style="--c: #d62828;">
+        <a href="book9.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780316769488-M.jpg" alt="">
+          <span><strong>The Catcher in the Rye</strong><small>J.D. Salinger</small></span>
+        </a>
+      </li>
+      <li style="--c: #3a86ff;">
+        <a href="book10.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780156012195-M.jpg" alt="">
+          <span><strong>The Little Prince</strong><small>Antoine de Saint-Exupéry</small></span>
+        </a>
+      </li>
+      <li style="--c: #bc4749;">
+        <a href="book11.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780451526342-M.jpg" alt="">
+          <span><strong>Animal Farm</strong><small>George Orwell</small></span>
+        </a>
+      </li>
+      <li style="--c: #0077b6;">
+        <a href="book12.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9781594631931-M.jpg" alt="">
+          <span><strong>The Kite Runner</strong><small>Khaled Hosseini</small></span>
+        </a>
+      </li>
+      <li style="--c: #8338ec;">
+        <a href="book13.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg" alt="">
+          <span><strong>Sapiens</strong><small>Yuval Noah Harari</small></span>
+        </a>
+      </li>
+      <li style="--c: #06a77d;">
+        <a href="book14.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780735211292-M.jpg" alt="">
+          <span><strong>Atomic Habits</strong><small>James Clear</small></span>
+        </a>
+      </li>
+      <li style="--c: #9d0208;">
+        <a href="book15.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780307474278-M.jpg" alt="">
+          <span><strong>The Da Vinci Code</strong><small>Dan Brown</small></span>
+        </a>
+      </li>
+      <li style="--c: #e85d04;">
+        <a href="book16.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780439023481-M.jpg" alt="">
+          <span><strong>The Hunger Games</strong><small>Suzanne Collins</small></span>
+        </a>
+      </li>
+      <li style="--c: #6a4c93;">
+        <a href="book17.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780375842207-M.jpg" alt="">
+          <span><strong>The Book Thief</strong><small>Markus Zusak</small></span>
+        </a>
+      </li>
+      <li style="--c: #118ab2;">
+        <a href="book18.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780060850524-M.jpg" alt="">
+          <span><strong>Brave New World</strong><small>Aldous Huxley</small></span>
+        </a>
+      </li>
+      <li style="--c: #c9184a;">
+        <a href="book19.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780812979657-M.jpg" alt="">
+          <span><strong>The God of Small Things</strong><small>Arundhati Roy</small></span>
+        </a>
+      </li>
+      <li style="--c: #2d6a4f;">
+        <a href="book20.html" target="info">
+          <img src="https://covers.openlibrary.org/b/isbn/9780143039655-M.jpg" alt="">
+          <span><strong>Malgudi Days</strong><small>R.K. Narayan</small></span>
+        </a>
+      </li>
+    </ul>
+    <p class="empty" id="empty" hidden>No books match your search 🙈</p>
+  </nav>
+
+  <footer class="list-footer">Lab 3 &middot; HTML Frames</footer>
+
+  <script>
+    var links = document.querySelectorAll("nav a");
+
+    function highlight(href) {
+      for (var i = 0; i < links.length; i++) {
+        var match = links[i].getAttribute("href") === href;
+        links[i].classList.toggle("active", match);
+        if (match) links[i].scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+    }
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        highlight(this.getAttribute("href"));
+      });
+    }
+
+    function filterBooks() {
+      var q = document.getElementById("search").value.toLowerCase();
+      var items = document.querySelectorAll("#books li");
+      var shown = 0;
+      for (var i = 0; i < items.length; i++) {
+        var hit = items[i].textContent.toLowerCase().indexOf(q) !== -1;
+        items[i].hidden = !hit;
+        if (hit) shown++;
+      }
+      document.getElementById("count").textContent = shown;
+      document.getElementById("empty").hidden = shown !== 0;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hobbit – J.R.R. Tolkien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="info-page">
+
+  <article class="book" style="--accent: #588157;">
+    <div class="book__cover">
+      <img src="https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg" alt="Cover of The Hobbit">
+      <span class="sticker" aria-hidden="true">🐉</span>
+    </div>
+
+    <div class="book__body">
+      <p class="pill">Fantasy Adventure</p>
+      <h1 class="book__title">The Hobbit</h1>
+      <p class="book__author">by J.R.R. Tolkien</p>
+
+      <dl class="meta">
+        <div><dt>Published</dt><dd>1937</dd></div>
+        <div><dt>Country</dt><dd>United Kingdom</dd></div>
+        <div><dt>Language</dt><dd>English</dd></div>
+      </dl>
+
+      <h2>About the book</h2>
+      <p class="book__summary">
+        Comfort-loving hobbit Bilbo Baggins is swept into a quest with thirteen dwarves and the wizard Gandalf to win back treasure guarded by the dragon Smaug. Along the way he finds courage — and a very special ring.
+      </p>
+
+      <h2>Key themes</h2>
+      <ul class="tags">
+        <li>Adventure</li>
+        <li>Courage</li>
+        <li>Greed</li>
+        <li>Home</li>
+      </ul>
+
+      <nav class="pager">
+        <a href="book7.html">&larr; Previous</a>
+        <span>08 / 20</span>
+        <a href="book9.html">Next &rarr;</a>
+      </nav>
+    </div>
+  </article>
+
+  <script>
+    // Keep the left frame's highlight in sync (works when served over http)
+    try { parent.frames["list"].highlight("book8.html"); } catch (err) {}
+  </script>
+
+</body>
+</html>

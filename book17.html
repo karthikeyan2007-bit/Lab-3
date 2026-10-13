@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book Thief – Markus Zusak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="info-page">
+
+  <article class="book" style="--accent: #6a4c93;">
+    <div class="book__cover">
+      <img src="https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg" alt="Cover of The Book Thief">
+      <span class="sticker" aria-hidden="true">📚</span>
+    </div>
+
+    <div class="book__body">
+      <p class="pill">Historical Fiction</p>
+      <h1 class="book__title">The Book Thief</h1>
+      <p class="book__author">by Markus Zusak</p>
+
+      <dl class="meta">
+        <div><dt>Published</dt><dd>2005</dd></div>
+        <div><dt>Country</dt><dd>Australia</dd></div>
+        <div><dt>Language</dt><dd>English</dd></div>
+      </dl>
+
+      <h2>About the book</h2>
+      <p class="book__summary">
+        In Nazi Germany, young Liesel Meminger steals books and shares them with her neighbours and the Jewish man hiding in her basement. Narrated by Death, it is a moving story about the power of words.
+      </p>
+
+      <h2>Key themes</h2>
+      <ul class="tags">
+        <li>Power of words</li>
+        <li>Kindness</li>
+        <li>Loss</li>
+        <li>War</li>
+      </ul>
+
+      <nav class="pager">
+        <a href="book16.html">&larr; Previous</a>
+        <span>17 / 20</span>
+        <a href="book18.html">Next &rarr;</a>
+      </nav>
+    </div>
+  </article>
+
+  <script>
+    // Keep the left frame's highlight in sync (works when served over http)
+    try { parent.frames["list"].highlight("book17.html"); } catch (err) {}
+  </script>
+
+</body>
+</html>
